@@ -5,12 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
 </head>
+<style>
+    body{
+        background-color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+    }
+    h1{
+        color: rgb(243, 113, 113);
+        background-color: white;
+    }
+    h3{
+        color: rgb(236, 91, 91);
+        background-color: white;
+    }
+    article{
+        color: white;
+    }
+    h2{
+        color: rgb(236, 91, 91);
+    }
+</style>
 <body>
 
    <header> <h1>Arthur leandro &#x26BD
 </h1>
 </header>
-<img src="data:image/png;base64,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" alt="">
+<img src="Imagens/temao cori.jpg" alt="">
 <section>
     <header>
         <h2>
@@ -112,212 +133,235 @@
                         <hr>
                    </article>   
                  
-
+                   <article>
                     <h3>
-                         Historia do estadio do corinthians
-                    </h3>
+                        Historia do estadio do corinthians
+                   </h3>
 
-                    Na mesma Folha, a coluna de Mônica Bergamo trouxe a informação no dia 25 de agosto: "Lula entrou em campo para ajudar o Corinthians a construir o seu estádio. Ele está 'estimulando fortemente o Emílio Odebrecht', da Odebrecht, a fazer a arena, diz um interlocutor do presidente.
+                   Na mesma Folha, a coluna de Mônica Bergamo trouxe a informação no dia 25 de agosto: "Lula entrou em campo para ajudar o Corinthians a construir o seu estádio. Ele está 'estimulando fortemente o Emílio Odebrecht', da Odebrecht, a fazer a arena, diz um interlocutor do presidente.
 
-                 <h3>
-                    Rebaixamento do corinthians
-                 </h3>
+                   </article>
+                   
+                   <article>
+                    <h3>
+                        Rebaixamento do corinthians
+                     </h3>
+                     
+                     O Corinthians possui até então apenas um rebaixamento em sua história no Campeonato Brasileiro de Futebol. A fatídica queda à Série B ocorreu na temporada de 2007, ano em que o clube terminou o Nacional em 17º, com apenas 44 pontos conquistados. Caíram junto com o Timão as equipes do América RN, Juventude e Paraná.
+    
+                     Naquela temporada, a equipe do Parque São Jorge ficou a um ponto do Goiás, primeira equipe fora da zona do rebaixamento. Entretanto, o empate do Timão na última rodada com o Grêmio, junto à vitória da equipe Esmeraldina contra o Internacional, culminaram no primeiro e único rebaixamento do Corinthians.
+                   </article>
+                
+<article>
+    <h3>
+        O que aconteceu em 1924
+     </h3>
+
+     O ano do primeiro tri do Timão.
+
+     O Corinthians já começou o campeonato atropelando todo mundo: 5 x 1 sobre a Portuguesa, 6 x 2 no Internacional, 7 x 2 na AA Palmeiras e 6 x 1 sobre o Santos.
+
+     Porém, em julho a competição teve que ser paralisada por um mês e meio, devido a Revolta Paulista que eclodiu em São Paulo.
+
+     Menos mal que quando o futebol voltou, na metade de agosto, o Corinthians não tinha perdido o embalo e seguiu rumo ao tri.
+</article>
                  
-                 O Corinthians possui até então apenas um rebaixamento em sua história no Campeonato Brasileiro de Futebol. A fatídica queda à Série B ocorreu na temporada de 2007, ano em que o clube terminou o Nacional em 17º, com apenas 44 pontos conquistados. Caíram junto com o Timão as equipes do América RN, Juventude e Paraná.
-
-                 Naquela temporada, a equipe do Parque São Jorge ficou a um ponto do Goiás, primeira equipe fora da zona do rebaixamento. Entretanto, o empate do Timão na última rodada com o Grêmio, junto à vitória da equipe Esmeraldina contra o Internacional, culminaram no primeiro e único rebaixamento do Corinthians.
-
-                 <h3>
-                    O que aconteceu em 1924
-                 </h3>
-
-                 O ano do primeiro tri do Timão.
-
-                 O Corinthians já começou o campeonato atropelando todo mundo: 5 x 1 sobre a Portuguesa, 6 x 2 no Internacional, 7 x 2 na AA Palmeiras e 6 x 1 sobre o Santos.
-
-                 Porém, em julho a competição teve que ser paralisada por um mês e meio, devido a Revolta Paulista que eclodiu em São Paulo.
-
-                 Menos mal que quando o futebol voltou, na metade de agosto, o Corinthians não tinha perdido o embalo e seguiu rumo ao tri.
-               
-                 <h3>
+               <article>
+                <h3>
                     Título mundial do Corinthians há 10 anos foi o último conquistado por um clube da América do Sul
                  </h3>
 
                  Há exatos 10 anos, no dia 16 de dezembro de 2012, o Corinthians conquistava o seu segundo Mundial de Clubes da Fifa, ao bater o Chelsea por 1 a 0, em Yokohama. Aquela foi a última vez que um clube não-europeu foi campeão do mundo. Na última década, Palmeiras, Flamengo, Atlético-MG, River Plate… vários clubes sul-americanos tentaram, mas somente times europeus conquistaram o torneio.
 
                  Entre os heróis daquela conquista há dez anos, somente o goleiro Cássio continua de maneira ininterrupta no Corinthians. O lateral Fábio Santos faz parte do atual elenco, mas saiu e depois voltou ao Parque São Jorge. O técnico era Tite.
+               </article>
+                 
 
+                <article>
+                    <p>
+                        <li>
+                           <h3>
+                            Corinthians transforma Arena em 'fortaleza', e completa um ano sem perder em casa no Brasileirão
+                           </h3>
+                        </li>
+                      </p> 
+                      Historicamente, a Fiel sempre foi o '12º jogador' do Corinthians, especialmente em casa. Neste Brasileirão, o clube está sobrando quando os jogos são na Neo Química Arena. Com a vitória por 1 a 0 sobre o Botafogo, pela primeira rodada do segundo turno do campeonato, o Timão alcançou 80% de aproveitamento como mandante no campeonato.
+    
+                     Dos 38 pontos conquistados até aqui, 24 foram em Itaquera. 19 dos 25 gols marcados pelo clube alvinegro na campanha foram anotados jogando diante do seu torcedor, e somente três dos 19 gols sofridos foram em casa.
+    
+                     Notícias relacionadas
+                     Torcida do Corinthians lotou a NeoQuímica Arena Foto: Marco Galvão/FotoArena / Estadão
+                     Tom de ameaça e revolta contra Duilio: Fiel protesta após derrota do Corinthians
+                     Duílio foi criticado após a contratação de Cuca como novo treinador do Corinthians Foto: Ag. Corinthians
+                     Presidente do Corinthians lembra escolha por Cuca e não enxerga Tite como "ingrato"
+                     Luan teria sido agredido por torcedores do Corinthians Foto: Kely Pereira/Agif / Gazeta Press
+                     Luan é agredido por torcedores em motel em São Paulo, diz jornalista
+                     A última derrota do Corinthians na Neo Química Arena em um jogo de Campeonato Brasileiro foi no dia 1º de agosto de 2021, quase um ano atrás. Naquela ocasião, a equipe treinada por Sylvinho levou três gols no primeiro tempo para o Flamengo de Renato Gaúcho. No final da partida, Vitinho fez o gol de honra corintiano.
+    
+                     De lá para cá, foram 22 jogos válidos pelo Brasileirão em Itaquera, com 16 vitórias corintianas e seis empates. Nesse período, o Timão marcou 34 gols, um a cada 58 minutos, segundo o Footstats. Defensivamente, a equipe só levou 11 gols, precisando de 180 minutos por partida para ser vazada, também de acordo com o Footstats.
+                </article>
+                  
+                  <article>
+                    <h3>
+                        <hr>
+                        são-paulo ou corinthians qual é o maio time <img src="IMAGENS/vai corith01.jpg" alt="quem e melhor corinthians ou sao-paulo">
+                     </h3>
+    
+                     O diálogo entre um corintiano e um são-paulino, salvo raras exceções, normalmente acontece assim: quantos títulos da Libertadores você já comemorou, questiona o tricolor? E quantos Mundiais?
+    
+                     Ao que o corintiano imediatamente responde: de que adianta ter três se nós somos maiores, aparecemos mais na mídia, temos muito mais torcedores e somos mais apaixonados.
+    
+                     A discussão levanta paixão. E é absolutamente saudável.
+    
+                     Não fosse assim, estádios não encheriam, cotas de direitos de TV valeriam pouco, e os profissionais de marketing iriam procurar outros produtos para introduzir seus conceitos que não o futebol.
+    
+                     No entanto, nos últimos anos, esta rivalidade paulistana iniciada em 1936 com vitória corintiana no Parque São Jorge ganhou contornos bélicos, a ponto de preocupar autoridades (o clássico é apontado como o mais violento do Estado pela polícia) e armar espíritos até então pacíficos.
+    
+                     Discussões que deveriam começar e terminar amistosamente na mesa de um bar, insuflam cartolas de ambos os lados.
+    
+                     De adversários, os dois gigantes tornaram-se inimigos. Com prejuízos para ambos os lados.
+    
+                     A situação chegou a um nível insustentável. Que provocou, inclusive, a adoção de medidas extremas e inexplicáveis dentro de um processo cada vez mais profissional.
+    
+                     A questão da não utilização do estádio do Morumbi pelo Corinthians é emblemática, e pode ser avaliada como o estopim da discórdia.
+    
+                     Começou quando o presidente do São Paulo, Juvenal Juvêncio, anunciou antes de um clássico contra o Timão em 2009 que cederia ao rival apenas 10% dos ingressos, quebrando acordo de cavalheiros de divisão do estádio meio a meio que durava décadas.
+    
+                     Por mais que Juvenal reforce a idéia de que o Morumbi é viável sem a necessidade de alugá-lo para jogos do rival, e por mais que o presidente corintiano Andrés Sanchez ressalte que o Pacaembu seja suficiente para as partidas do clube, a intransigência já fez com que as duas partes deixassem de faturar muitos milhões de reais.
+    
+                     A partir daí, provocações aumentaram as chamas, alimentadas com picuinhas de caráter duvidoso.
+                     Hoje, os dois clubes disputam uma competição paralela entre si, que não se limita aos gramados, como deveria ser.
+    
+                     A ponto de discussões como qual clube recebe mais dinheiro da TV, qual ganha mais pelo patrocínio da camisa, qual tem a marca mais valiosa e qual leva mais gente a festas populares e apresentações de atletas serem tão valorizadas quanto a conquista de um título.
+    
+                     Até hoje não inventaram nenhum aparelho capaz de medir a grandeza de um clube.
+    
+                     Para muitos, o número e a importância dos títulos conquistados serve como parâmetro. Para outros tantos, este conceito pode ser medido em número de torcedores e na paixão que demonstram.
+    
+                     E ainda existem alguns, como os que por exemplo amam o Ipatinga, cidade de onde escrevo neste momento, que afirmam que a conquista do campeonato Mineiro em 2005 é um feito comparável a maior glória que qualquer clube do planeta poderia alcançar.
+    
+                     Mas, para corintianos e são-paulinos que não querem encerrar a discussão (saudável, neste caso) sobre grandeza, proponho alguns dados para alimentá-la:
+    
+                     - O São Paulo conquistou três Libertadores e três mundiais, enquanto o  Corinthians levantou o Mundial da Fifa do ano 2000 (os rivais contestam o título, alegando que o time do Parque São Jorge não venceu a Libertadores)
+    
+                     - O São Paulo tem seis títulos brasileiros, o Corinthians tem quatro
+    
+                     - O Corinthians levantou três Copas do Brasil, o São Paulo jamais alcançou este troféu
+    
+                     - O Corinthians conquistou em cinco ocasiões o torneio Rio-São Paulo,  contra uma do São Paulo
+    
+                     - O Corinthians conquistou o Campeonato Paulista 26 vezes, contra 21 do São Paulo
+    
+                     - O São Paulo tem seu estádio no Morumbi, com capacidade para 60 mil pessoas, enquanto o Corinthians tem como casa o Parque São Jorge, com seus pouco menos de 15 mil lugares. No entanto, o recorde de público do palco tricolor pertence ao Corinthians (146.082 torcedores na segunda partida decisiva do Campeonato Paulista de 1977 contra a Ponte Preta)
+    
+                     - Pesquisas apontam que o Corinthians tem cerca de 26 milhões de  torcedores no Brasil, contra 16 milhões de são-paulinos. 
+    
+                     QUEM É O VERDADEIRO FREGUÊS?
+    
+                     Este é um tema recente que vem sendo abordado nos gritos de guerra de corintianos e são-paulinos.
+    
+                     Nada melhor do que irmos ao números do clássico para que cada um tire a sua conclusão sobre quem é freguês de quem.
+    
+                     DADOS DO CLÁSSICO ENTRE SÃO PAULO E CORINTHIANS
+    
+                     - Os dois rivais realizaram até hoje 292 clássicos.
+    
+                     - O Corinthians venceu 111
+    
+                     - O empate aconteceu em 92 jogos
+    
+                     - O São Paulo venceu 89 duelos.
+                  </article>
+                 
+<article>
+    <h3>
+        Uns dos maiores jogos do corinthians
+    </h3>
+
+    Os 16 de dezembro de 1990 e de 2012, o 4 de julho de 2012, o hors-concours 13 de outubro de 1977 e o eterno 8 de abril de 2018 são datas que todos corinthianos, maloqueiros e sofredores reverenciam com enorme carinho e felicidade, mas, para além de títulos memoráveis, quem respira Corinthians e sobrevive de corinthianismo e não (só) de títulos têm muitas partidas salvas na prateleira das inesquecíveis e corinthianíssimas. A épica classificação corinthiana na Bombonera entraram para essa galeria dos grandes jogos que têm vida própria e independem do desfecho do campeonato para se tornarem imortais.
+</article>
+                 <article>
+                    <h3>
+                        <hr>
+                        São Paulo 0 x 1 Corinthians (7/10/2007) <img src="IMAGENS/sao-paulo x corinthians.jpg" alt="gavião da fiel ">
+                     </h3>
+                     Na casa de um rival nitidamente superior que acabaria campeão brasileiro com um quilômetro de vantagem em relação ao vice-líder, o pior Corinthians de todos os tempos, que, não à toa, acabaria rebaixado no final do certame, foi buscar a vitória na raça, na garra e na mística no finalzinho com gol de Betão, triunfo que manteve ainda viva a esperança de evitar a queda.
+                 </article>
+                 
+<article>
+    <h3>
+        Santos 1 x 2 Corinthians (13/5/2001) <img src="IMAGENS/sant x cori.jpg" alt="santos e corinthians ganha de lavada ">
+     </h3>
+     O Timão saiu atrás no placar e o empate classificava ao Santos à decisão. À vera, o resultado estava dando o título ao Peixe, já que ninguém acreditava que o vencedor do duelo perderia a final para o Botafogo de Ribeirão Preto. E a torcida peixeira, esperançosa em acabar com a fila que perdurava desde 1984, já ensaiava a festa no Morumbi quando Ricardinho, na última bola, venceu Fábio Costa, manteve o Santos na fila e colocou o Corinthians na rota do título paulista. Muitos corinthianos nem lembram do modorrento 0 a 0 contra o Botafogo, que foi a decisão daquela conquista estadual.
+</article>
+                 
+<article>
+    <h3>
+        Palmeiras 0 x 1 Corinthians (10/12/1989) <img src="IMAGENS/palmei  x cori.jpg" alt="palmeiras ou corinthians quem ganha ">
+     </h3>
+     SÓ PARA ASSINANTES
+
+
+     Vitor Guedes 
+     Colunista do UOL
+
+     06/07/2022 11h16Atualizada em 06/07/2022 11h16
+
+     Receba os novos posts desta coluna no seu e-mail
+     Digite seu email
+     Os 16 de dezembro de 1990 e de 2012, o 4 de julho de 2012, o hors-concours 13 de outubro de 1977 e o eterno 8 de abril de 2018 são datas que todos corinthianos, maloqueiros e sofredores reverenciam com enorme carinho e felicidade, mas, para além de títulos memoráveis, quem respira Corinthians e sobrevive de corinthianismo e não (só) de títulos têm muitas partidas salvas na prateleira das inesquecíveis e corinthianíssimas.
+
+     A épica classificação corinthiana na Bombonera entraram para essa galeria dos grandes jogos que têm vida própria e independem do desfecho do campeonato para se tornarem imortais.
+
+     PUBLICIDADE
+
+
+     Segue a lista da Coluna Vitor Guedes de dez jogos, por ordem cronológica invertida. A ordem de importância é subjetiva, geracional e deixo para cada torcedor fazer a sua. Na minha opinião, que nasceria só no mês seguinte, em janeiro de 1977, o jogo da Invasão Corinthiana original é a partida mais Corinthians de todos os tempos, título que nenhum rival teve, tem ou terá.
+
+     RELACIONADAS
+
+     Saravá, São Cássio! Saravá, São Jorge!
+
+     'A Conmebol parecia a sala da presidência do São Paulo', revela Mário Gobbi
+
+     Galo economiza bola e vai ter que gastar o crédito contra o Palmeiras
+
+     Top 10 de jogos eternos
+
+     1. Boca Juniors 0 x 0 Corinthians (5/7/2022)
+
+     Gil - Staff Images/Conmebol - Staff Images/Conmebol
+     Gil bateu o pênalti que selou a classificação do  Corinthians para as quartas de final da Libertadores; Boca Juniors foi eliminado
+     Imagem: Staff Images/Conmebol
+     Dizimado por desfalques, destruído fisicamente e sobrevivendo no jogo com três laterais esquerdos, três zagueiros, dois volantes e um garoto que ainda pertence ao Capivariano, o Corinthians teve penalidade contra nos 90 minutos, "match-point" contra na última cobrança do Boca Júnior na série de cinco penalidades e venceu na cobrança chorada, sofrida e lenta do negro Gil, calando a torcida do Boca Juniors, inclusive a ignóbil parcela xenófoba e racista. O Corinthians de Cássio repetiu o feito de Santos de Pelé e eliminou o Santos na Bombonera!
+
+     2. São Paulo 0 x 1 Corinthians (7/102007)
+
+     Betão - Diego Padgurschi/Folha Imagem - Diego Padgurschi/Folha Imagem
+     Betão comemora gol marcado pelo Corinthians contra o São Paulo no ano do rebaixamento
+     Imagem: Diego Padgurschi/Folha Imagem
+     Na casa de um rival nitidamente superior que acabaria campeão brasileiro com um quilômetro de vantagem em relação ao vice-líder, o pior Corinthians de todos os tempos, que, não à toa, acabaria rebaixado no final do certame, foi buscar a vitória na raça, na garra e na mística no finalzinho com gol de Betão, triunfo que manteve ainda viva a esperança de evitar a queda.
+
+     3. Santos 1 x 2 Corinthians (13/5/2001)
+
+     Ricaridnho - Jefferson Coppola/Folhapress - Jefferson Coppola/Folhapress
+     Ricardinho comemora gol em histórica vitória do Corinthians sobre o Santos no Paulistão de 2001
+     Imagem: Jefferson Coppola/Folhapress
+     O Timão saiu atrás no placar e o empate classificava ao  Santos à decisão. À vera, o resultado estava dando o título ao Peixe, já que ninguém acreditava que o vencedor do duelo perderia a final para o Botafogo de Ribeirão Preto. E a torcida peixeira, esperançosa em acabar com a fila que perdurava desde 1984, já ensaiava a festa no Morumbi quando Ricardinho, na última bola, venceu Fábio Costa, manteve o Santos na fila e colocou o Corinthians na rota do título paulista. Muitos corinthianos nem lembram do modorrento 0 a 0 contra o Botafogo, que foi a decisão daquela conquista estadual.
+
+     4. Palmeiras 0 x 1 Corinthians (10/12/1989) 
+
+     Eliminado, cumprindo tabela e na condição de azarão, o Corinthians venceu o Derby com um golaço antológico de Cláudio Adão, resultado que tirou a possibilidade do arqui-inimigo sair da fila. Foi o segundo 10 de dezembro mais importante da história, só superado pelo 10 de dezembro de 2008, data do nascimento de Basílio Ruiz Guedes.
+</article>
                 
-                  <p>
-                    <li>
-                       <h3>
-                        Corinthians transforma Arena em 'fortaleza', e completa um ano sem perder em casa no Brasileirão
-                       </h3>
-                    </li>
-                  </p> 
-                  Historicamente, a Fiel sempre foi o '12º jogador' do Corinthians, especialmente em casa. Neste Brasileirão, o clube está sobrando quando os jogos são na Neo Química Arena. Com a vitória por 1 a 0 sobre o Botafogo, pela primeira rodada do segundo turno do campeonato, o Timão alcançou 80% de aproveitamento como mandante no campeonato.
-
-                 Dos 38 pontos conquistados até aqui, 24 foram em Itaquera. 19 dos 25 gols marcados pelo clube alvinegro na campanha foram anotados jogando diante do seu torcedor, e somente três dos 19 gols sofridos foram em casa.
-
-                 Notícias relacionadas
-                 Torcida do Corinthians lotou a NeoQuímica Arena Foto: Marco Galvão/FotoArena / Estadão
-                 Tom de ameaça e revolta contra Duilio: Fiel protesta após derrota do Corinthians
-                 Duílio foi criticado após a contratação de Cuca como novo treinador do Corinthians Foto: Ag. Corinthians
-                 Presidente do Corinthians lembra escolha por Cuca e não enxerga Tite como "ingrato"
-                 Luan teria sido agredido por torcedores do Corinthians Foto: Kely Pereira/Agif / Gazeta Press
-                 Luan é agredido por torcedores em motel em São Paulo, diz jornalista
-                 A última derrota do Corinthians na Neo Química Arena em um jogo de Campeonato Brasileiro foi no dia 1º de agosto de 2021, quase um ano atrás. Naquela ocasião, a equipe treinada por Sylvinho levou três gols no primeiro tempo para o Flamengo de Renato Gaúcho. No final da partida, Vitinho fez o gol de honra corintiano.
-
-                 De lá para cá, foram 22 jogos válidos pelo Brasileirão em Itaquera, com 16 vitórias corintianas e seis empates. Nesse período, o Timão marcou 34 gols, um a cada 58 minutos, segundo o Footstats. Defensivamente, a equipe só levou 11 gols, precisando de 180 minutos por partida para ser vazada, também de acordo com o Footstats.
-                  
-                 <h3>
-                    <hr>
-                    são-paulo ou corinthians qual é o maio time <img src="IMAGENS/vai corith.jpg" alt="quem e melhor corinthians ou sao-paulo">
-                 </h3>
-
-                 O diálogo entre um corintiano e um são-paulino, salvo raras exceções, normalmente acontece assim: quantos títulos da Libertadores você já comemorou, questiona o tricolor? E quantos Mundiais?
-
-                 Ao que o corintiano imediatamente responde: de que adianta ter três se nós somos maiores, aparecemos mais na mídia, temos muito mais torcedores e somos mais apaixonados.
-
-                 A discussão levanta paixão. E é absolutamente saudável.
-
-                 Não fosse assim, estádios não encheriam, cotas de direitos de TV valeriam pouco, e os profissionais de marketing iriam procurar outros produtos para introduzir seus conceitos que não o futebol.
-
-                 No entanto, nos últimos anos, esta rivalidade paulistana iniciada em 1936 com vitória corintiana no Parque São Jorge ganhou contornos bélicos, a ponto de preocupar autoridades (o clássico é apontado como o mais violento do Estado pela polícia) e armar espíritos até então pacíficos.
-
-                 Discussões que deveriam começar e terminar amistosamente na mesa de um bar, insuflam cartolas de ambos os lados.
-
-                 De adversários, os dois gigantes tornaram-se inimigos. Com prejuízos para ambos os lados.
-
-                 A situação chegou a um nível insustentável. Que provocou, inclusive, a adoção de medidas extremas e inexplicáveis dentro de um processo cada vez mais profissional.
-
-                 A questão da não utilização do estádio do Morumbi pelo Corinthians é emblemática, e pode ser avaliada como o estopim da discórdia.
-
-                 Começou quando o presidente do São Paulo, Juvenal Juvêncio, anunciou antes de um clássico contra o Timão em 2009 que cederia ao rival apenas 10% dos ingressos, quebrando acordo de cavalheiros de divisão do estádio meio a meio que durava décadas.
-
-                 Por mais que Juvenal reforce a idéia de que o Morumbi é viável sem a necessidade de alugá-lo para jogos do rival, e por mais que o presidente corintiano Andrés Sanchez ressalte que o Pacaembu seja suficiente para as partidas do clube, a intransigência já fez com que as duas partes deixassem de faturar muitos milhões de reais.
-
-                 A partir daí, provocações aumentaram as chamas, alimentadas com picuinhas de caráter duvidoso.
-                 Hoje, os dois clubes disputam uma competição paralela entre si, que não se limita aos gramados, como deveria ser.
-
-                 A ponto de discussões como qual clube recebe mais dinheiro da TV, qual ganha mais pelo patrocínio da camisa, qual tem a marca mais valiosa e qual leva mais gente a festas populares e apresentações de atletas serem tão valorizadas quanto a conquista de um título.
-
-                 Até hoje não inventaram nenhum aparelho capaz de medir a grandeza de um clube.
-
-                 Para muitos, o número e a importância dos títulos conquistados serve como parâmetro. Para outros tantos, este conceito pode ser medido em número de torcedores e na paixão que demonstram.
-
-                 E ainda existem alguns, como os que por exemplo amam o Ipatinga, cidade de onde escrevo neste momento, que afirmam que a conquista do campeonato Mineiro em 2005 é um feito comparável a maior glória que qualquer clube do planeta poderia alcançar.
-
-                 Mas, para corintianos e são-paulinos que não querem encerrar a discussão (saudável, neste caso) sobre grandeza, proponho alguns dados para alimentá-la:
-
-                 - O São Paulo conquistou três Libertadores e três mundiais, enquanto o  Corinthians levantou o Mundial da Fifa do ano 2000 (os rivais contestam o título, alegando que o time do Parque São Jorge não venceu a Libertadores)
-
-                 - O São Paulo tem seis títulos brasileiros, o Corinthians tem quatro
-
-                 - O Corinthians levantou três Copas do Brasil, o São Paulo jamais alcançou este troféu
-
-                 - O Corinthians conquistou em cinco ocasiões o torneio Rio-São Paulo,  contra uma do São Paulo
-
-                 - O Corinthians conquistou o Campeonato Paulista 26 vezes, contra 21 do São Paulo
-
-                 - O São Paulo tem seu estádio no Morumbi, com capacidade para 60 mil pessoas, enquanto o Corinthians tem como casa o Parque São Jorge, com seus pouco menos de 15 mil lugares. No entanto, o recorde de público do palco tricolor pertence ao Corinthians (146.082 torcedores na segunda partida decisiva do Campeonato Paulista de 1977 contra a Ponte Preta)
-
-                 - Pesquisas apontam que o Corinthians tem cerca de 26 milhões de  torcedores no Brasil, contra 16 milhões de são-paulinos. 
-
-                 QUEM É O VERDADEIRO FREGUÊS?
-
-                 Este é um tema recente que vem sendo abordado nos gritos de guerra de corintianos e são-paulinos.
-
-                 Nada melhor do que irmos ao números do clássico para que cada um tire a sua conclusão sobre quem é freguês de quem.
-
-                 DADOS DO CLÁSSICO ENTRE SÃO PAULO E CORINTHIANS
-
-                 - Os dois rivais realizaram até hoje 292 clássicos.
-
-                 - O Corinthians venceu 111
-
-                 - O empate aconteceu em 92 jogos
-
-                 - O São Paulo venceu 89 duelos
-
-                 <h3>
-                     Uns dos maiores jogos do corinthians
-                 </h3>
-
-                 Os 16 de dezembro de 1990 e de 2012, o 4 de julho de 2012, o hors-concours 13 de outubro de 1977 e o eterno 8 de abril de 2018 são datas que todos corinthianos, maloqueiros e sofredores reverenciam com enorme carinho e felicidade, mas, para além de títulos memoráveis, quem respira Corinthians e sobrevive de corinthianismo e não (só) de títulos têm muitas partidas salvas na prateleira das inesquecíveis e corinthianíssimas. A épica classificação corinthiana na Bombonera entraram para essa galeria dos grandes jogos que têm vida própria e independem do desfecho do campeonato para se tornarem imortais
-                 <h3>
-                    <hr>
-                    São Paulo 0 x 1 Corinthians (7/10/2007) <img src="IMAGENS/sao-paulo x corinthians.jpg" alt="gavião da fiel ">
-                 </h3>
-                 Na casa de um rival nitidamente superior que acabaria campeão brasileiro com um quilômetro de vantagem em relação ao vice-líder, o pior Corinthians de todos os tempos, que, não à toa, acabaria rebaixado no final do certame, foi buscar a vitória na raça, na garra e na mística no finalzinho com gol de Betão, triunfo que manteve ainda viva a esperança de evitar a queda.
-
-                 <h3>
-                    Santos 1 x 2 Corinthians (13/5/2001) <img src="IMAGENS/sant x cori.jpg" alt="santos e corinthians ganha de lavada ">
-                 </h3>
-                 O Timão saiu atrás no placar e o empate classificava ao Santos à decisão. À vera, o resultado estava dando o título ao Peixe, já que ninguém acreditava que o vencedor do duelo perderia a final para o Botafogo de Ribeirão Preto. E a torcida peixeira, esperançosa em acabar com a fila que perdurava desde 1984, já ensaiava a festa no Morumbi quando Ricardinho, na última bola, venceu Fábio Costa, manteve o Santos na fila e colocou o Corinthians na rota do título paulista. Muitos corinthianos nem lembram do modorrento 0 a 0 contra o Botafogo, que foi a decisão daquela conquista estadual.
-
-                 <h3>
-                    Palmeiras 0 x 1 Corinthians (10/12/1989) <img src="IMAGENS/palmei  x cori.jpg" alt="palmeiras ou corinthians quem ganha ">
-                 </h3>
-                 SÓ PARA ASSINANTES
-
-
-                 Vitor Guedes 
-                 Colunista do UOL
-
-                 06/07/2022 11h16Atualizada em 06/07/2022 11h16
-
-                 Receba os novos posts desta coluna no seu e-mail
-                 Digite seu email
-                 Os 16 de dezembro de 1990 e de 2012, o 4 de julho de 2012, o hors-concours 13 de outubro de 1977 e o eterno 8 de abril de 2018 são datas que todos corinthianos, maloqueiros e sofredores reverenciam com enorme carinho e felicidade, mas, para além de títulos memoráveis, quem respira Corinthians e sobrevive de corinthianismo e não (só) de títulos têm muitas partidas salvas na prateleira das inesquecíveis e corinthianíssimas.
-
-                 A épica classificação corinthiana na Bombonera entraram para essa galeria dos grandes jogos que têm vida própria e independem do desfecho do campeonato para se tornarem imortais.
-
-                 PUBLICIDADE
-
-
-                 Segue a lista da Coluna Vitor Guedes de dez jogos, por ordem cronológica invertida. A ordem de importância é subjetiva, geracional e deixo para cada torcedor fazer a sua. Na minha opinião, que nasceria só no mês seguinte, em janeiro de 1977, o jogo da Invasão Corinthiana original é a partida mais Corinthians de todos os tempos, título que nenhum rival teve, tem ou terá.
-
-                 RELACIONADAS
-
-                 Saravá, São Cássio! Saravá, São Jorge!
-
-                 'A Conmebol parecia a sala da presidência do São Paulo', revela Mário Gobbi
-
-                 Galo economiza bola e vai ter que gastar o crédito contra o Palmeiras
-
-                 Top 10 de jogos eternos
-
-                 1. Boca Juniors 0 x 0 Corinthians (5/7/2022)
-
-                 Gil - Staff Images/Conmebol - Staff Images/Conmebol
-                 Gil bateu o pênalti que selou a classificação do  Corinthians para as quartas de final da Libertadores; Boca Juniors foi eliminado
-                 Imagem: Staff Images/Conmebol
-                 Dizimado por desfalques, destruído fisicamente e sobrevivendo no jogo com três laterais esquerdos, três zagueiros, dois volantes e um garoto que ainda pertence ao Capivariano, o Corinthians teve penalidade contra nos 90 minutos, "match-point" contra na última cobrança do Boca Júnior na série de cinco penalidades e venceu na cobrança chorada, sofrida e lenta do negro Gil, calando a torcida do Boca Juniors, inclusive a ignóbil parcela xenófoba e racista. O Corinthians de Cássio repetiu o feito de Santos de Pelé e eliminou o Santos na Bombonera!
-
-                 2. São Paulo 0 x 1 Corinthians (7/102007)
-
-                 Betão - Diego Padgurschi/Folha Imagem - Diego Padgurschi/Folha Imagem
-                 Betão comemora gol marcado pelo Corinthians contra o São Paulo no ano do rebaixamento
-                 Imagem: Diego Padgurschi/Folha Imagem
-                 Na casa de um rival nitidamente superior que acabaria campeão brasileiro com um quilômetro de vantagem em relação ao vice-líder, o pior Corinthians de todos os tempos, que, não à toa, acabaria rebaixado no final do certame, foi buscar a vitória na raça, na garra e na mística no finalzinho com gol de Betão, triunfo que manteve ainda viva a esperança de evitar a queda.
-
-                 3. Santos 1 x 2 Corinthians (13/5/2001)
-
-                 Ricaridnho - Jefferson Coppola/Folhapress - Jefferson Coppola/Folhapress
-                 Ricardinho comemora gol em histórica vitória do Corinthians sobre o Santos no Paulistão de 2001
-                 Imagem: Jefferson Coppola/Folhapress
-                 O Timão saiu atrás no placar e o empate classificava ao  Santos à decisão. À vera, o resultado estava dando o título ao Peixe, já que ninguém acreditava que o vencedor do duelo perderia a final para o Botafogo de Ribeirão Preto. E a torcida peixeira, esperançosa em acabar com a fila que perdurava desde 1984, já ensaiava a festa no Morumbi quando Ricardinho, na última bola, venceu Fábio Costa, manteve o Santos na fila e colocou o Corinthians na rota do título paulista. Muitos corinthianos nem lembram do modorrento 0 a 0 contra o Botafogo, que foi a decisão daquela conquista estadual.
-
-                 4. Palmeiras 0 x 1 Corinthians (10/12/1989) 
-
-                 Eliminado, cumprindo tabela e na condição de azarão, o Corinthians venceu o Derby com um golaço antológico de Cláudio Adão, resultado que tirou a possibilidade do arqui-inimigo sair da fila. Foi o segundo 10 de dezembro mais importante da história, só superado pelo 10 de dezembro de 2008, data do nascimento de Basílio Ruiz Guedes.
-                  
-                 <h3>
-                    Corinthians 4 x 1 Flamengo (6/5/1984) <img src="IMAGENS/flam x cori.jpg" alt="flamengo ou crinthians na disputa quem ganha e corinthians de 4 x 1">
-                 </h3>
-
-                 Após perder no Rio por 2 a 0 do Flamengo de Zico, que era o atual campeão brasileiro e grande favorito à conquista, o Corintihans sapecou 4 a 1 e avançou às semifinais. O jogo ficou marcado pelo placar eletrônico do Morumbi anunciando os os voos da ponte área, numa provocação à torcida flamenguista, que voltaria para casa sem a classificação na bagagem. Depois, o Corinthians acabaria perdendo a semifinal para o Fluminense, que se sagraria campeão contra o Flu, mas aquela vitória no clássico do povo está eternizada dentro dos corações corinthianos. Edson, Biro-Brio, Wladimir e Ataliba fizeram os gols do time do povo.
+                 <article>
+                    <h3>
+                        Corinthians 4 x 1 Flamengo (6/5/1984) <img src="IMAGENS/flam x cori.jpg" alt="flamengo ou crinthians na disputa quem ganha e corinthians de 4 x 1">
+                     </h3>
+    
+                     Após perder no Rio por 2 a 0 do Flamengo de Zico, que era o atual campeão brasileiro e grande favorito à conquista, o Corintihans sapecou 4 a 1 e avançou às semifinais. O jogo ficou marcado pelo placar eletrônico do Morumbi anunciando os os voos da ponte área, numa provocação à torcida flamenguista, que voltaria para casa sem a classificação na bagagem. Depois, o Corinthians acabaria perdendo a semifinal para o Fluminense, que se sagraria campeão contra o Flu, mas aquela vitória no clássico do povo está eternizada dentro dos corações corinthianos. Edson, Biro-Brio, Wladimir e Ataliba fizeram os gols do time do povo.
+                 </article> 
+                 
                 </LI>
                 
                 
