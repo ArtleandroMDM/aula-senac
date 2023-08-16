@@ -1,9 +1,14 @@
 body {
+  background: rgb(63, 67, 68);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 67, 68, 1) 16%,
+    rgba(102, 138, 172, 1) 50%,
+    rgba(63, 67, 68, 1) 88%
+  );
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 20px;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(Imagens/sucodetox.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -16,4 +21,5 @@ article {
   justify-content: center;
   align-items: center;
   position: absolute;
+  color: white;
 }
