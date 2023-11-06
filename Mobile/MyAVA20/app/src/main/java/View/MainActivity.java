@@ -35,15 +35,15 @@ public class MainActivity extends AppCompatActivity {
         pessoa.setidcalculo("Super-Man");
 
         btnNum1 = findViewById(R.id.idNm1);
-        btnNum1 = findViewById(R.id.idNm2);
-        btnNum1 = findViewById(R.id.idNm3);
-        btnNum1 = findViewById(R.id.idNm4);
-        btnNum1 = findViewById(R.id.idNm5);
-        btnNum1 = findViewById(R.id.idNm6);
-        btnNum1 = findViewById(R.id.idNm7);
-        btnNum1 = findViewById(R.id.idNm8);
-        btnNum1 = findViewById(R.id.idNm9);
-        btnNum1 = findViewById(R.id.idNm0);
+        btnNum2 = findViewById(R.id.idNm2);
+        btnNum3 = findViewById(R.id.idNm3);
+        btnNum4 = findViewById(R.id.idNm4);
+        btnNum5 = findViewById(R.id.idNm5);
+        btnNum6 = findViewById(R.id.idNm6);
+        btnNum7 = findViewById(R.id.idNm7);
+        btnNum8 = findViewById(R.id.idNm8);
+        btnNum9 = findViewById(R.id.idNm9);
+        btnNum0 = findViewById(R.id.idNm0);
 
 
 
