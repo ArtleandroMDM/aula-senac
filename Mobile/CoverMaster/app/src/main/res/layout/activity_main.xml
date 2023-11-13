@@ -7,28 +7,28 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/idDolar"
+        android:id="@+id/btn_Dolar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="68dp"
-        android:text="US$"
+        android:text="@string/txt_button_dolar"
         android:backgroundTint="#4FB653"
-        app:layout_constraintBottom_toTopOf="@+id/idSalvar"
-        app:layout_constraintEnd_toStartOf="@+id/idEuro"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Salvar"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Euro"
         app:layout_constraintHorizontal_bias="0.825"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idNumero"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/idEuro"
+        android:id="@+id/btn_Euro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="68dp"
-        android:text="€"
+        android:text="@string/txt_button_Euro"
         android:backgroundTint="#D5C645"
-        app:layout_constraintBottom_toTopOf="@+id/idFinalizar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Finalizar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,49 +36,49 @@
         app:layout_constraintVertical_bias="0.979" />
 
     <Button
-        android:id="@+id/idReais"
+        android:id="@+id/btn_Reais"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="392dp"
-        android:text="R$"
+        android:text="@string/txt_button_reais"
         android:backgroundTint="#03A9F4"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/idDolar"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Dolar"
         app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idNumero"
         app:layout_constraintVertical_bias="0.734" />
 
     <Button
-        android:id="@+id/idSalvar"
+        android:id="@+id/btn_Salvar"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="68dp"
         android:layout_marginEnd="92dp"
-        android:text="Salvar"
+        android:text="@string/txt_button_salvar"
         android:backgroundTint="#3F51B5"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/idFinalizar"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Finalizar"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idReais"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Reais"
         app:layout_constraintVertical_bias="0.003" />
 
     <Button
-        android:id="@+id/idFinalizar"
+        android:id="@+id/btn_Finalizar"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:layout_marginEnd="16dp"
-        android:text="Finalizar"
+        android:text="@string/txt_button_finalizar"
         android:backgroundTint="#3F51B5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/idDolar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Dolar"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
@@ -92,7 +92,7 @@
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.202"
+        app:layout_constraintVertical_bias="0.211"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

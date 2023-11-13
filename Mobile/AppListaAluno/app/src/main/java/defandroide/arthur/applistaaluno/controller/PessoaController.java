@@ -18,7 +18,7 @@ public class PessoaController {
     public PessoaController(MainActivity mainActivity) {
 
         preferences = mainActivity.getSharedPreferences(NOME_PREFERENCES, 0);
-
+        listaAlunos = preferences.edit();
 
 
 
@@ -33,12 +33,27 @@ public class PessoaController {
     }
 
     public void Salvar(Pessoa pessoa) {
-        Log.d("MVC_Controller", "Dados Salvos" + toString());
-    }
-    public void  buscar(){
 
+        Log.d("MVC_Controller", "Dados Salvos" + toString());
+        listaAlunos.putString("PrimeiroNome", pessoa.getPrimeiroNome());
+        listaAlunos.putString("Sobrenome", pessoa.getSobrenome());
+        listaAlunos.putString("Matricula", pessoa.getMatricula());
+        listaAlunos.putString("CPF", pessoa.getCPF());
+        listaAlunos.apply();
+    }
+
+    public Pessoa buscar(Pessoa pessoa){
+
+         pessoa.setPrimeiroNome(preferences.getString("PrimeiroNome", "NA"));
+         pessoa.setSobrenome(preferences.getString("Sobrenome", "NA"));
+         pessoa.setMatricula(preferences.getString("Matricula", "NA"));
+         pessoa.setCPF(preferences.getString("CPF", "NA"));
+         return pessoa;
     }
     public void limpar(){
+        listaAlunos.clear();
+        listaAlunos.apply();
+
 
     }
 }
