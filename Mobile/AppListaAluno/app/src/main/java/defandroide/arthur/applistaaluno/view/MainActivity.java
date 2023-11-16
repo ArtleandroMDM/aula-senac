@@ -2,12 +2,13 @@ package defandroide.arthur.applistaaluno.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.util.List;
@@ -15,7 +16,6 @@ import java.util.List;
 import defandroide.arthur.applistaaluno.R;
 import defandroide.arthur.applistaaluno.controller.CursoController;
 import defandroide.arthur.applistaaluno.controller.PessoaController;
-import defandroide.arthur.applistaaluno.model.Curso;
 import defandroide.arthur.applistaaluno.model.Pessoa;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,20 +23,21 @@ public class MainActivity extends AppCompatActivity {
 
 
     Pessoa pessoa;
-    List<Curso> listaCursos;
+    List<String> nomesCursos;
     CursoController cursoController;
     PessoaController controller;
 
-    List<String> listaCur;
 
     EditText id_nome;
     EditText id_sobrenome;
     EditText id_matricula;
     EditText id_cpf;
+
     Button btn_limpar;
     Button btn_Salvar;
     Button btn_Finalizar;
 
+    Spinner spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
         cursoController = new CursoController();
 
-        listaCursos = cursoController.getListaCursos();
+        nomesCursos = cursoController.getListaCursos();
 
         cursoController.getListaCursos();
 
@@ -64,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         id_sobrenome = findViewById(R.id.editsobrenome);
         id_matricula = findViewById(R.id.editMatricula);
         id_cpf = findViewById(R.id.editCPF);
+        spinner = findViewById(R.id.spinner);
 
         id_sobrenome.setText(pessoa.getSobrenome());
         id_matricula.setText(pessoa.getMatricula());
@@ -73,7 +75,10 @@ public class MainActivity extends AppCompatActivity {
         btn_Salvar = findViewById(R.id.btn_Salvar);
         btn_Finalizar = findViewById(R.id.btn_Finalizar);
 
-
+        ArrayAdapter<String> adapter =
+            new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,cursoController.dadosSpinner());
+        adapter.setDropDownViewResource(android.R.layout.simple_list_item_1);
+        spinner.setAdapter(adapter);
 
         btn_limpar.setOnClickListener(new View.OnClickListener() {
             @Override
