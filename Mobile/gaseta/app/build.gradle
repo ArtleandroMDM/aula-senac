@@ -7,7 +7,7 @@ android {
     compileSdk 34
 
     defaultConfig {
-        applicationId "defandroide.arthur.applistaaluno"
+        applicationId "defandroide.arthur.appgaseta"
         minSdk 27
         targetSdk 33
         versionCode 1

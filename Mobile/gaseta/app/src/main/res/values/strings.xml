@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AppListaAluno</string>
+    <string name="app_name">App GasEta</string>
     <string name="txt_hint_edit_gasolina">Primeiro Nome</string>
     <string name="txt_hint_edit_etanol">Sobrenome</string>
     <string name="txt_hint_edit_matricula">Matricula</string>
