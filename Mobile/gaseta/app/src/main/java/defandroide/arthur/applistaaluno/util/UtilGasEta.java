@@ -2,17 +2,6 @@ package defandroide.arthur.applistaaluno.util;
 
 public class UtilGasEta {
 
-    //metodo nao estatico
-
-    public static void metodoNaoEstatico(){
-
-    }
-
-    //metodo estatico
-
-    public static void metodoEstatico(){
-    }
-
     public static String mensagem(){
         return "Seja bem vindo";
     }
