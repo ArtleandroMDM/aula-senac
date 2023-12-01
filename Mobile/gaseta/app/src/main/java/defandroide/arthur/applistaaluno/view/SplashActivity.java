@@ -10,7 +10,7 @@ import defandroide.arthur.applistaaluno.R;
 
 public class SplashActivity extends AppCompatActivity {
 
-    public static final int TIME_OUT_SPLASH = 3000;
+    public static final int TIME_OUT_SPLASH = 4000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

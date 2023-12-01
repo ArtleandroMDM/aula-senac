@@ -15,6 +15,8 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.List;
+
 import defandroide.arthur.applistaaluno.R;
 import defandroide.arthur.applistaaluno.controller.CombustivelController;
 import defandroide.arthur.applistaaluno.model.Combustivel;
@@ -23,12 +25,10 @@ import defandroide.arthur.applistaaluno.util.UtilGasEta;
 public class GasEtaActivity extends AppCompatActivity{
 
     CombustivelController controller;
+    Combustivel combustivel;
 
-    Combustivel combustivelEtanol;
-    Combustivel combustivelGasolina;
-
-    EditText editEtanol;
     EditText editGasolina;
+    EditText editEtanol;
 
     TextView textReslutado;
 
@@ -39,18 +39,35 @@ public class GasEtaActivity extends AppCompatActivity{
 
     double precoEtanol;
     double precoGasolina;
+
     String recomendacao;
 
+    Combustivel combustivelEtanol;
+    Combustivel combustivelGasolina;
+
+    List<Combustivel> dados;
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gaseta);
+        controller = new CombustivelController(this);
 
-        controller = new CombustivelController(GasEtaActivity.this);
 
-        controller.toString();
+
+
+
+
+//        Combustivel objAlteracao = dados.get(5);
+//        objAlteracao.setNomeCombustivel("Gasolina Adulterada");
+//       objAlteracao.setPrecoCombustivel(8.99);
+//      objAlteracao.setRecomendacao("sai fora que é fria");
+//
+//       controller.alterar(objAlteracao);
+//      controller.deletarObjeto(1);
+
+
 
         editEtanol = findViewById(R.id.editEtanol);
         editGasolina = findViewById(R.id.editGasolina);
@@ -61,6 +78,8 @@ public class GasEtaActivity extends AppCompatActivity{
         btn_limpar = findViewById(R.id.btn_limpar);
         btn_Salvar = findViewById(R.id.btn_Salvar);
         btn_Finalizar = findViewById(R.id.btn_Finalizar);
+
+        CombustivelController controller = new CombustivelController(GasEtaActivity.this);
 
         btn_calcular.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -116,6 +135,7 @@ public class GasEtaActivity extends AppCompatActivity{
             }
         });
 
+
         btn_Salvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -132,11 +152,9 @@ public class GasEtaActivity extends AppCompatActivity{
                 combustivelGasolina.setRecomendacao(UtilGasEta.calcularMelhorOpcao(precoGasolina, precoEtanol));
                 combustivelEtanol.setRecomendacao(UtilGasEta.calcularMelhorOpcao(precoGasolina, precoEtanol));
 
-                controller.salvar(combustivelEtanol);
                 controller.salvar(combustivelGasolina);
+                controller.salvar(combustivelEtanol);
 
-
-                int parada = 0;
             }
         });
 

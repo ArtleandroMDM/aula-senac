@@ -3,6 +3,7 @@ package defandroide.arthur.applistaaluno.util;
 public class UtilGasEta {
 
     public static String mensagem(){
+
         return "Seja bem vindo";
     }
 
