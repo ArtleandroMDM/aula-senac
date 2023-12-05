@@ -10,8 +10,11 @@ import android.widget.Toast;
 
 import defandroide.arthur.trello_csd.Model.Cartas;
 import defandroide.arthur.trello_csd.R;
+import defandroide.arthur.trello_csd.controller.CartaController;
 
 public class MainActivity extends AppCompatActivity {
+
+    CartaController controller;
 
     Cartas cartas;
 
@@ -26,7 +29,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        controller = new CartaController(MainActivity.this);
+        controller.toString();
+
         cartas = new Cartas();
+        controller.buscar(cartas);
 
 
         edit_carta = findViewById(R.id.edit_carta);
@@ -46,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
                 edit_carta.setText("");
                 edit_raridade.setText("");
 
+                controller.limpar();
+
             }
         });
         btn_Finalizar.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this, "Aplicativo Finalizado", Toast.LENGTH_LONG).show();
                 finish();
+
             }
         });
 
@@ -64,6 +74,8 @@ public class MainActivity extends AppCompatActivity {
             cartas.setRaridade(edit_raridade.getText().toString());
 
             Toast.makeText(MainActivity.this, "Dados Salvos com sucesso" + cartas.toString(),Toast.LENGTH_LONG).show();
+
+            controller.salvar(cartas);
 
             }
         });
