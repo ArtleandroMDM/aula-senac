@@ -32,8 +32,8 @@ public class CartaController {
         }
 
         public Cartas buscar(Cartas cartas){
-                cartas.setCarta(preferences.getString("Carta", "NA"));
-                cartas.setRaridade(preferences.getString("Raridade", "NA"));
+                cartas.setCarta(preferences.getString("Carta", ""));
+                cartas.setRaridade(preferences.getString("Raridade", ""));
                 return cartas;
         }
         public void limpar() {
