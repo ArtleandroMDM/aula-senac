@@ -56,9 +56,6 @@ public class GasEtaActivity extends AppCompatActivity{
 
 
 
-
-
-
 //        Combustivel objAlteracao = dados.get(5);
 //        objAlteracao.setNomeCombustivel("Gasolina Adulterada");
 //       objAlteracao.setPrecoCombustivel(8.99);

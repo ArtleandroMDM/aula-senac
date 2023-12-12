@@ -5,6 +5,9 @@ public class Cartas {
     private String Carta;
     private String Raridade;
 
+    public Cartas() {
+    }
+
 
     public String getCarta() {
         return Carta;
@@ -20,5 +23,8 @@ public class Cartas {
 
     public void setRaridade(String raridade) {
         Raridade = raridade;
+    }
+
+    public void put(String carta, String carta1) {
     }
 }
